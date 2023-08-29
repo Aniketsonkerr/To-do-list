@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs")%>
+<div class="footer">
+  <ul class="list-group">
+    <div class="card text-center mb-3" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Today is</h5>
+        <p class="card-text"><%= todaysDate %> & <%= todaysDay %>!</p>
+      </div>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+        <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+        <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+      </li>
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+        <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+      </li>
+      <div class="input-group">
+        <input type="text" class="form-control" aria-label="Text input with radio button" name="task">
+        <div class="input-group-text">
+          <a href="/today" class="btn btn-primary">Add Task</a>
+        </div>
+      </div>
+    </ul>
+  </div>  
+<%- include("partials/footer.ejs") %>
